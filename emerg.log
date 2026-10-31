@@ -1,0 +1,46 @@
+=== Adaptive Smart Traffic Signal Controller (software skeleton) ===
+Using MOCK GPIO layer - safe to run with no hardware attached.
+
+[gpio_mock] Initialized (console simulation mode)
+[gpio_mock] Type 'e0' + Enter to simulate an emergency vehicle on NS approach, 'e1' for EW approach.
+
+===== Signal Timeline / CLI Dashboard =====
+[gpio_mock] NS signal -> GREEN
+[gpio_mock] EW signal -> RED
+t= 3352984 ms | [SignalController] start -> NS-Green
+[gpio_mock] NS signal -> YELLOW
+[gpio_mock] EW signal -> RED
+t= 3356985 ms | [SignalController] -> NS-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 3358986 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> GREEN
+t= 3359987 ms | [SignalController] -> EW-Green
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> YELLOW
+t= 3362988 ms | [SignalController] -> EW-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 3364989 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> GREEN
+[gpio_mock] EW signal -> RED
+t= 3365990 ms | [SignalController] -> NS-Green
+[gpio_mock] NS signal -> YELLOW
+[gpio_mock] EW signal -> RED
+t= 3371991 ms | [SignalController] -> NS-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 3373992 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> GREEN
+t= 3374993 ms | [SignalController] -> EW-Green
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> YELLOW
+t= 3377994 ms | [SignalController] -> EW-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 3379995 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> GREEN
+[gpio_mock] EW signal -> RED
+t= 3380996 ms | [SignalController] -> NS-Green

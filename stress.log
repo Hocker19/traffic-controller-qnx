@@ -1,0 +1,247 @@
+=== Adaptive Smart Traffic Signal Controller (software skeleton) ===
+Using MOCK GPIO layer - safe to run with no hardware attached.
+
+[gpio_mock] Initialized (console simulation mode)
+[gpio_mock] Type 'e0' + Enter to simulate an emergency vehicle on NS approach, 'e1' for EW approach.
+
+===== Signal Timeline / CLI Dashboard =====
+[gpio_mock] NS signal -> GREEN
+[gpio_mock] EW signal -> RED
+t= 1759089 ms | [SignalController] start -> NS-Green
+[gpio_mock] NS signal -> YELLOW
+[gpio_mock] EW signal -> RED
+t= 1764090 ms | [SignalController] -> NS-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1766091 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> GREEN
+t= 1767092 ms | [SignalController] -> EW-Green
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> YELLOW
+t= 1771093 ms | [SignalController] -> EW-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1773096 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> GREEN
+[gpio_mock] EW signal -> RED
+t= 1774097 ms | [SignalController] -> NS-Green
+[gpio_mock] NS signal -> YELLOW
+[gpio_mock] EW signal -> RED
+t= 1777100 ms | [SignalController] -> NS-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1779101 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> GREEN
+t= 1780102 ms | [SignalController] -> EW-Green
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> YELLOW
+t= 1788103 ms | [SignalController] -> EW-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1790104 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> GREEN
+[gpio_mock] EW signal -> RED
+t= 1791105 ms | [SignalController] -> NS-Green
+[gpio_mock] NS signal -> YELLOW
+[gpio_mock] EW signal -> RED
+t= 1794106 ms | [SignalController] -> NS-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1796107 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> GREEN
+t= 1797108 ms | [SignalController] -> EW-Green
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> YELLOW
+t= 1800109 ms | [SignalController] -> EW-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1802110 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> GREEN
+[gpio_mock] EW signal -> RED
+t= 1803111 ms | [SignalController] -> NS-Green
+[gpio_mock] NS signal -> YELLOW
+[gpio_mock] EW signal -> RED
+t= 1811112 ms | [SignalController] -> NS-Yellow
+---- (deadline misses so far: 0) ----
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1813113 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> GREEN
+t= 1814115 ms | [SignalController] -> EW-Green
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> YELLOW
+t= 1818116 ms | [SignalController] -> EW-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1820117 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> GREEN
+[gpio_mock] EW signal -> RED
+t= 1821118 ms | [SignalController] -> NS-Green
+[gpio_mock] NS signal -> YELLOW
+[gpio_mock] EW signal -> RED
+t= 1825119 ms | [SignalController] -> NS-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1827120 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> GREEN
+t= 1828121 ms | [SignalController] -> EW-Green
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> YELLOW
+t= 1831122 ms | [SignalController] -> EW-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1833123 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> GREEN
+[gpio_mock] EW signal -> RED
+t= 1834124 ms | [SignalController] -> NS-Green
+[gpio_mock] NS signal -> YELLOW
+[gpio_mock] EW signal -> RED
+t= 1838125 ms | [SignalController] -> NS-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1840127 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> GREEN
+t= 1841129 ms | [SignalController] -> EW-Green
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> YELLOW
+t= 1844130 ms | [SignalController] -> EW-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1846131 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> GREEN
+[gpio_mock] EW signal -> RED
+t= 1847132 ms | [SignalController] -> NS-Green
+[gpio_mock] NS signal -> YELLOW
+[gpio_mock] EW signal -> RED
+t= 1854134 ms | [SignalController] -> NS-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1856135 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> GREEN
+t= 1857136 ms | [SignalController] -> EW-Green
+---- (deadline misses so far: 0) ----
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> YELLOW
+t= 1861137 ms | [SignalController] -> EW-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1863138 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> GREEN
+[gpio_mock] EW signal -> RED
+t= 1864139 ms | [SignalController] -> NS-Green
+[gpio_mock] NS signal -> YELLOW
+[gpio_mock] EW signal -> RED
+t= 1867140 ms | [SignalController] -> NS-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1869141 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> GREEN
+t= 1870143 ms | [SignalController] -> EW-Green
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> YELLOW
+t= 1876144 ms | [SignalController] -> EW-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1878145 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> GREEN
+[gpio_mock] EW signal -> RED
+t= 1879146 ms | [SignalController] -> NS-Green
+[gpio_mock] NS signal -> YELLOW
+[gpio_mock] EW signal -> RED
+t= 1883147 ms | [SignalController] -> NS-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1885148 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> GREEN
+t= 1886149 ms | [SignalController] -> EW-Green
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> YELLOW
+t= 1892150 ms | [SignalController] -> EW-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1894151 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> GREEN
+[gpio_mock] EW signal -> RED
+t= 1895152 ms | [SignalController] -> NS-Green
+[gpio_mock] NS signal -> YELLOW
+[gpio_mock] EW signal -> RED
+t= 1898153 ms | [SignalController] -> NS-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1900154 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> GREEN
+t= 1901155 ms | [SignalController] -> EW-Green
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> YELLOW
+t= 1904157 ms | [SignalController] -> EW-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1906158 ms | [SignalController] -> All-Red
+---- (deadline misses so far: 0) ----
+[gpio_mock] NS signal -> GREEN
+[gpio_mock] EW signal -> RED
+t= 1907159 ms | [SignalController] -> NS-Green
+[gpio_mock] NS signal -> YELLOW
+[gpio_mock] EW signal -> RED
+t= 1910160 ms | [SignalController] -> NS-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1912161 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> GREEN
+t= 1913162 ms | [SignalController] -> EW-Green
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> YELLOW
+t= 1919163 ms | [SignalController] -> EW-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1921164 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> GREEN
+[gpio_mock] EW signal -> RED
+t= 1922165 ms | [SignalController] -> NS-Green
+[gpio_mock] NS signal -> YELLOW
+[gpio_mock] EW signal -> RED
+t= 1925166 ms | [SignalController] -> NS-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1927167 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> GREEN
+t= 1928168 ms | [SignalController] -> EW-Green
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> YELLOW
+t= 1934169 ms | [SignalController] -> EW-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1936171 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> GREEN
+[gpio_mock] EW signal -> RED
+t= 1937172 ms | [SignalController] -> NS-Green
+[gpio_mock] NS signal -> YELLOW
+[gpio_mock] EW signal -> RED
+t= 1942173 ms | [SignalController] -> NS-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1944174 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> GREEN
+t= 1945175 ms | [SignalController] -> EW-Green
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> YELLOW
+t= 1950176 ms | [SignalController] -> EW-Yellow
+[gpio_mock] NS signal -> RED
+[gpio_mock] EW signal -> RED
+t= 1952177 ms | [SignalController] -> All-Red
+[gpio_mock] NS signal -> GREEN
+[gpio_mock] EW signal -> RED
+t= 1953178 ms | [SignalController] -> NS-Green
